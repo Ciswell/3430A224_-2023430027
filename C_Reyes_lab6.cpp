@@ -75,7 +75,7 @@ int main(int argc, char *argv[]) {
 // esta función inicia el vector de distancias 'D' a partir de la primera fila de la matriz 'M'
 void inicializar_vector_D(int D[], int M[][100], int N) {
     for (int col = 0; col < N; col++) {
-        // ai hay una distancia no alcanzable (-1), la inicializamos a infinito
+        // hay una distancia no alcanzable (-1), la inicializamos a infinito
         if (M[0][col] == -1) {
             D[col] = INT_MAX;
         } else {
